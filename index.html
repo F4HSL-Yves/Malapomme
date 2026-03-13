@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malapomme – Jus de pomme & noix du jardin</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fafafa;
+}
+
+header {
+    background: #8bbf3d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #5a8c2e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #8bbf3d;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🍎 MALAPOMME</h1>
+<p>Jus de pomme maison & noix du jardin</p>
+</header>
+
+<nav>
+<a href="#produits">Produits</a>
+<a href="#commande">Commander</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section>
+<h2>Notre production</h2>
+<p>
+Le jus Malapomme est pressé artisanalement à partir de pommes du jardin.
+Nos noix sont récoltées à la main, sans traitement.
+Production familiale en petite quantité.
+</p>
+</section>
+
+<section id="produits">
+<h2>Produits</h2>
+
+<div class="product">
+<h3>🍏 Jus de pomme Malapomme</h3>
+<p>Bouteille 1 L – Production artisanale</p>
+<p><strong>Prix :</strong> 4 €</p>
+</div>
+
+<div class="product">
+<h3>🌰 Noix du jardin</h3>
+<p>1 kg – Récolte naturelle</p>
+<p><strong>Prix :</strong> 6 €</p>
+</div>
+
+</section>
+
+<section id="commande">
+<h2>Passer commande</h2>
+
+<form action="mailto:votreemail@exemple.com" method="post" enctype="text/plain">
+Nom :<br>
+<input type="text" name="Nom"><br><br>
+
+Email :<br>
+<input type="email" name="Email"><br><br>
+
+Quantité jus de pomme :<br>
+<input type="number" name="Jus"><br><br>
+
+Quantité noix (kg) :<br>
+<input type="number" name="Noix"><br><br>
+
+Message :<br>
+<textarea name="Message"></textarea><br><br>
+
+<button type="submit">Envoyer la commande</button>
+</form>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : votreemail@exemple.com</p>
+<p>Localisation : Bourg-Saint-Maurice</p>
+</section>
+
+<footer>
+© Malapomme
+</footer>
+
+</body>
+</html>
