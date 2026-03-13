@@ -5,138 +5,135 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Malapomme – Jus de pomme & noix du jardin</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
 <style>
-
 body {
-    margin:0;
-    font-family: Inter, sans-serif;
-    background:#f6f6f4;
-    color:#2e2e2e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fafafa;
 }
 
 header {
-    background:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600') center/cover;
-    height:70vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    text-align:center;
+    background: #8bbf3d;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-header h1 {
-    font-family: Playfair Display;
-    font-size:64px;
-    margin:0;
+nav {
+    background: #5a8c2e;
+    padding: 10px;
+    text-align: center;
 }
 
-header p {
-    font-size:22px;
-    background:rgba(0,0,0,0.4);
-    padding:10px 20px;
-    border-radius:6px;
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 section {
-    max-width:1000px;
-    margin:auto;
-    padding:60px 20px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
 }
 
-h2 {
-    font-family: Playfair Display;
-    font-size:36px;
-}
-
-.products {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.card {
-    background:white;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+.product {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 button {
-    background:#7a9c3f;
-    color:white;
-    border:none;
-    padding:12px 25px;
-    border-radius:6px;
-    font-size:16px;
+    background: #8bbf3d;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
 footer {
-    background:#2e2e2e;
-    color:white;
-    padding:40px;
-    text-align:center;
+    background: #eee;
+    padding: 20px;
+    text-align: center;
 }
-
-@media(max-width:700px){
-.products{
-grid-template-columns:1fr;
-}
-header h1{
-font-size:42px;
-}
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Malapomme</h1>
-<p>Jus de pomme artisanal & noix du jardin</p>
+<h1>🍎 MALAPOMME</h1>
+<p>Jus de pomme maison & noix du jardin</p>
 </header>
 
+<nav>
+<a href="#produits">Produits</a>
+<a href="#commande">Commander</a>
+<a href="#contact">Contact</a>
+</nav>
+
 <section>
-<h2>Une production familiale</h2>
+<h2>Notre production</h2>
 <p>
-Nos pommes sont récoltées à la main et pressées localement.
-Nos noix proviennent d’arbres anciens non traités.
-Production limitée, vente directe.
+Le jus Malapomme est pressé artisanalement à partir de pommes du jardin.
+Nos noix sont récoltées à la main, sans traitement.
+Production familiale en petite quantité.
 </p>
 </section>
 
-<section>
-<h2>Nos produits</h2>
+<section id="produits">
+<h2>Produits</h2>
 
-<div class="products">
-
-<div class="card">
-<h3>🍎 Jus de pomme</h3>
-<p>Bouteille 1L – pressage artisanal</p>
-<p><strong>4 €</strong></p>
+<div class="product">
+<h3>🍏 Jus de pomme Malapomme</h3>
+<p>Bouteille 1 L – Production artisanale</p>
+<p><strong>Prix :</strong> 4 €</p>
 </div>
 
-<div class="card">
+<div class="product">
 <h3>🌰 Noix du jardin</h3>
-<p>Récolte naturelle – sac 1kg</p>
-<p><strong>6 €</strong></p>
-</div>
-
+<p>1 kg – Récolte naturelle</p>
+<p><strong>Prix :</strong> 6 €</p>
 </div>
 
 </section>
 
-<section>
-<h2>Commander</h2>
-<p>Contactez-nous directement :</p>
-<button onclick="location.href='mailto:bruno.malafosse@wanadoo.fr'">Passer commande</button>
+<section id="commande">
+<h2>Passer commande</h2>
+
+<form action="mailto:votreemail@exemple.com" method="post" enctype="text/plain">
+Nom :<br>
+<input type="text" name="Nom"><br><br>
+
+Email :<br>
+<input type="email" name="Email"><br><br>
+
+Quantité jus de pomme :<br>
+<input type="number" name="Jus"><br><br>
+
+Quantité noix (kg) :<br>
+<input type="number" name="Noix"><br><br>
+
+Message :<br>
+<textarea name="Message"></textarea><br><br>
+
+<button type="submit">Envoyer la commande</button>
+</form>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : bruno.malafosse@wanadoo.fr</p>
+<p>Localisation : Bourg-Saint-Maurice</p>
 </section>
 
 <footer>
-Production locale – Bourg-Saint-Maurice
+© Malapomme
 </footer>
 
 </body>
